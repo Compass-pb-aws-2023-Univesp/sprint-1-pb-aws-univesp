@@ -8,28 +8,36 @@
   <title>Validação de dados</title>
 </head>
 <body>
+  <nav class="navbar">
+    <div class="container">
+      <h2 class="title">Bem vindo ao validador de dados</h2>
+      <a class="navbar-brand" href="#">
+        <img src="img/compasso-uol-256.png" alt="Logo" height="40" class="d-inline-block align-text-right">
+      </a>
+    </div>
+  </nav>
   <div class="container mt-4">
-    <form class="row g-3" novalidate>
-      <div class="col-md-4">
-        <label for="nome" class="form-label">Nome</label>
-        <input type="text" class="form-control" id="nome" name="email" required>
-      </div>
-      <div class="col-md-6">
-        <label for="email" class="form-label">Email</label>
-        <input type="text" class="form-control" id="email" required>
-          <h6 class="mt-2" id='resultado'></h6>
-          <h6 class="mt-2" id='result_domain'></h6>
+      <form class="form-group row g-3" novalidate>
+        <div class="col-md-4">
+          <label for="nome" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="nome" name="email" required>
         </div>
-      <div class="col-md-3">
-        <label for="telefone" class="form-label">Telefone</label>
-        <input type="text" class="form-control" id="telefone" required>
-      </div>
-      <div class="col-12">
-      </div>
-      <div class="col-12 mt-4">
-        <button class="btn btn-primary" type="submit" id="botao_submit">Validar meus dados</button>
-      </div>
-    </form>
+        <div class="col-md-6">
+          <label for="email" class="form-label">Email</label>
+          <input type="text" class="form-control" id="email" required>
+            <h6 class="mt-2" id='resultado'></h6>
+            <h6 class="mt-2" id='result_domain'></h6>
+          </div>
+        <div class="col-md-3">
+          <label for="telefone" class="form-label">Telefone</label>
+          <input type="text" class="form-control" id="telefone" required>
+        </div>
+        <div class="col-12">
+        </div>
+        <div class="col-12 mt-4">
+          <button class="btn btn-primary" type="submit" id="botao_submit">Validar meus dados</button>
+        </div>
+      </form>
   </div>
   <script src="src/scripts.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
