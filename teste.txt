@@ -1,9 +1,16 @@
 Grupo 1:
 
--Bruno Perillo https://github.com/brunoperillo
-Irati Maffra https://github.com/IratiMaffra
-Luiz Sassi https://github.com/luizrsassi
-Carlos Camilo https://github.com/crobertocamilo
+-Bruno Perillo 
+https://github.com/brunoperillo
+
+-Irati Maffra 
+https://github.com/IratiMaffra
+
+-Luiz Sassi 
+https://github.com/luizrsassi
+
+-Carlos Camilo 
+https://github.com/crobertocamilo
 
 Teste commit nova branch
 
