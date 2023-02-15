@@ -9,26 +9,29 @@
 </head>
 <body>
   <div class="container mt-4">
-    <form class="row g-3 needs-validation" novalidate>
+    <form class="row g-3" novalidate>
       <div class="col-md-4">
         <label for="nome" class="form-label">Nome</label>
-        <input type="text" class="form-control" required>
+        <input type="text" class="form-control" id="nome" name="email" required>
       </div>
       <div class="col-md-6">
         <label for="email" class="form-label">Email</label>
-        <input type="text" class="form-control" required>
-      </div>
+        <input type="text" class="form-control" id="email" required>
+          <h6 class="mt-2" id='resultado'></h6>
+          <h6 class="mt-2" id='result_domain'></h6>
+        </div>
       <div class="col-md-3">
-        <label for="validationCustom05" class="form-label">Telefone</label>
-        <input type="text" class="form-control" id="validationCustom05" required>
-        <div class="invalid-feedback">
+        <label for="telefone" class="form-label">Telefone</label>
+        <input type="text" class="form-control" id="telefone" required>
       </div>
       <div class="col-12">
       </div>
       <div class="col-12 mt-4">
-        <button class="btn btn-primary" type="submit">Enviar</button>
+        <button class="btn btn-primary" type="submit" id="botao_submit">Validar meus dados</button>
       </div>
     </form>
   </div>
+  <script src="src/scripts.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </body>
 </html>
