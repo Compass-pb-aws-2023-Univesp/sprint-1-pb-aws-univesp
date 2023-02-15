@@ -26,6 +26,15 @@ function nameDomain(email){
   }
 }
 
+//função pra verificar se o nome de domínio tem dois ou mais caracteres
+function domainLength(email){
+  lenRegex = new RegExp (/a?[a-zA-Z]{2,}$/)
+  var lenString = lenRegex.test(email)
+  if(lenString){
+    return true
+  }
+}
+
 //Verificar se o domínio tem pelo menos 2 caracteres e termina com ".com", ".org", ".net", ".br" ou ".edu".
 //verifica se termina em .com
 function dotCOM(email){
@@ -69,10 +78,12 @@ function dotEDU(email){
 function validate(event){
   var $resultado = $("#resultado")
   var $result_domain = $("#result_domain")
+  var $result_len = $("#result_len")
   var email = $("#email").val()
   email = email.toLowerCase()
   $resultado.text("")
   $result_domain.text("")
+  //$result_len.text("")
 
   //if isEmail == true & nameDomain == true
     //seta o texto e o estilo para o definido abaixo
@@ -84,7 +95,8 @@ function validate(event){
     $resultado.text("O email " + email + " não é válido :/")
     $resultado.css("color", "red")
   }
-
+  
+  //verifica como termina o endereço de email
   if(dotCOM(email)){
     $result_domain.text(`O email termina em ".com"`)
     $result_domain.css("color", "green")
@@ -104,6 +116,11 @@ function validate(event){
   if(dotEDU(email)){
     $result_domain.text(`O email termina em ".edu"`)
     $result_domain.css("color", "green")
+  }
+  
+  if(domainLength(email)){
+    $result_len.text("O nome de domínio tem mais que 2 letras")
+    $result_len.css("color", "green")
   }
 
   //prevent default para a página não atualizar e perder os dados digitados nos inputs
