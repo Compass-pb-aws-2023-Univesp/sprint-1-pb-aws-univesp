@@ -1,6 +1,6 @@
-# Avaliação Sprint 1 - Programa de Bolsas Compass.uol / AWS e Univesp
+# Avaliação Sprint 1 - Programa de Bolsas Compass UOL / AWS e Univesp
 
-Avaliação da primeira sprint do programa de bolsas Compass.uol para formação em machine learning para AWS.
+Avaliação da primeira sprint do programa de bolsas Compass UOL para formação em machine learning para AWS.
 
 O Grupo 3 é composto pelos integrantes:
 - Adila Mota
