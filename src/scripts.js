@@ -82,7 +82,7 @@ function validate(event){
   email = email.toLowerCase()
   $resultado.text("")
   $result_domain.text("")
-  //$result_len.text("")
+  $result_len.text("")
 
   //if isEmail == true & nameDomain == true
     //seta o texto e o estilo para o definido abaixo
@@ -105,18 +105,18 @@ function validate(event){
     if(dotEDU(email)){
       $result_domain.text(`O email termina em ".edu"`)
       $result_domain.css("color", "green")}
+    if(!domainLength(email)){
+      $result_len.text("O nome de domínio está errado")
+      $result_len.css("color", "red")
+    }
+    else{
+      $result_len.text("O nome de domínio tem 2 ou mais letras")
+      $result_len.css("color", "green")
+    }
   }
   else{
     $resultado.text("O email " + email + " não é válido :/")
     $resultado.css("color", "red")
-  }
-  if(!domainLength(email)){
-    $result_len.text("O nome de domínio está errado")
-    $result_len.css("color", "red")
-  }
-  else{
-    $result_len.text("O nome de domínio tem 2 ou mais letras")
-    $result_len.css("color", "green")
   }
 
   //prevent default para a página não atualizar e perder os dados digitados nos inputs
