@@ -1,0 +1,1 @@
+// Classe para verificar se o telefone informado está no formato correto.

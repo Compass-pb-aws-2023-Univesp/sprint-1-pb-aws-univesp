@@ -1,0 +1,1 @@
+// Classe para verificar se o endereço de email informado pelo usuário é válido.
