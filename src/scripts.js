@@ -70,6 +70,25 @@ class CheckDomain{
   }
 }
 
+ //Essa função serve para capturar o nome digitado e exportar na var nome
+ function getNome(){
+  const nome = document.getElementById("nome").value
+  return nome
+} 
+
+// Classe para fazer a verificação se o nome contém apenas letras maisculas e minusculas
+class NameValidator {
+  static validar(nome) {
+    const regex = /^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ'\s]+$/ 
+    if (regex.test(nome)) {
+      return nome;
+    } else {
+      return false;
+    }
+  }
+}
+
+
 //essa função checa se isEmail & nameDomain são true
   //caso sim, verifica como termina o endereço de email
     //se tudo certo, mostra o email digitado com a mensagem "email válido"
@@ -79,11 +98,14 @@ function validate(event){
   let $resultado = $("#resultado")
   let $result_domain = $("#result_domain")
   let $result_len = $("#result_len")
+  let $result_name = $("#result_name")
   let email = $("#email").val()
+  let name = $("#name").val()
   email = email.toLowerCase()
   $resultado.text("")
   $result_domain.text("")
   $result_len.text("")
+  $result_name.text("")
 
   //if isEmail == true & nameDomain == true
     //seta o texto e o estilo para o definido abaixo
@@ -121,6 +143,20 @@ function validate(event){
     $resultado.text("O email " + email + " não é válido :/")
     $resultado.css("color", "red")
   }
+
+ //prevent default para a página não atualizar e perder os dados digitados nos inputs
+  event.preventDefault()
+
+if(!NameValidator.validar(name)){
+    $result_name.text("O nome foi digitado incorretamente: " + name)
+    $result_name.css("color", "red")
+}
+//o if abaixo tem um exclamação funcionando como negação, pra caso o nome esteja incorreto
+if(NameValidator.validar(name)){
+    $result_name.text("O nome foi digitado corretamente: " + name)
+    $result_name.css("color", "green")
+}
+
 
   //prevent default para a página não atualizar e perder os dados digitados nos inputs
   event.preventDefault()
