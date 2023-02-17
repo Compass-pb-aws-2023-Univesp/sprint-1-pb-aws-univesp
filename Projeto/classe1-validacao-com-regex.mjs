@@ -8,7 +8,7 @@ const rl = createInterface({
 });
 
 
-class ValidatorNome {
+class ValidadorNome {
   static validar(nome) {
     const regex = /^[a-zA-Z]+$/;
     if (regex.test(nome)) {
@@ -23,7 +23,7 @@ class ValidatorNome {
 
 rl.question('Digite seu nome: ', (nome) => {
   try {
-    const nomeValidado = ValidatorNome.validar(nome);
+    const nomeValidado = ValidadorNome.validar(nome);
     console.log(`Nome validado: ${nomeValidado}`);
   } catch (error) {
     console.error(error.message);

@@ -7,7 +7,7 @@ const rl = createInterface({
   output: process.stdout
 });
 
-class ValidatorTelefone {
+class ValidadorTelefone {
   static validar(numTelefone) {
     const regex = /^\(\d{2}\)\d{4}-\d{4}$/;
     if (regex.test(numTelefone)) {
@@ -22,7 +22,7 @@ class ValidatorTelefone {
 
 rl.question('Insira o número de telefone no formato (NN)NNNN-NNNN: ', (numTelefone) => {
   try {
-    const TelefoneValidado = ValidatorTelefone.validar(numTelefone);
+    const TelefoneValidado = ValidadorTelefone.validar(numTelefone);
     console.log(`Número de telefone válido: ${TelefoneValidado}`);
   } catch (error) {
     console.error(error.message);

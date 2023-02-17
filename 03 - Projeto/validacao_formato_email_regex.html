@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Validação Formato de Email com Regex.</title>
+</head>
+<body>
+<header>
+    <img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/f/f3/LogoCompasso-positivo.png"/>
+    <nav>
+        <ul>
+            <a href="./index.html">
+                <li>Home</li>
+            </a>
+            <a href="./contato.html">
+                <li>Contato</li>
+            </a>
+            <a href="./fotos.html">
+                <li>Fotos</li>
+            </a>
+            <a href="./comentarios.html">
+                <li>Comentários</li>
+            </a>
+        </ul>
+    </nav>
+</header>
+
+
+<div id="banner"></div>
+<div class="chamada">
+    <h1>Validação Formato de Email com Regex.</h1>
+</div>
+<div class="corpo">
+
+    <form action="./contato.html">
+        <label for="email">E-MAIL</label>
+        <input  id="email" type="name" name="email"/>
+        <label id="emailErro" style="display: none;">E-MAIL incorreto</label>
+
+        <textarea  name="mensagem" id="mensagem" rows="10"></textarea>
+
+        <input type="submit" name="submit" id="submit"/>
+
+    </form>
+</div>
+</body>
+
+
+<script type="text/javascript">
+
+    document.getElementById("submit").addEventListener("click", function(event){
+        event.preventDefault();
+        let email = document.getElementById("email").value;
+        let regexemail = new RegExp(/^[\w._-]+@[\w_.-]+\.[\w]{2,}/i);
+        if (regexemail.test(email)) {
+            alert('E-MAIL no formato correto');
+        } else {
+            document.getElementById("emailErro").style.display = "block";
+        }
+    });
+
+
+</script>
+
+</html>
