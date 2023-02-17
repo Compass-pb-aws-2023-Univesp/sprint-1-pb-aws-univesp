@@ -24,3 +24,4 @@ let telefone = prompt("Digite seu número de telefone no formato (NN)NNNN-NNNN :
 //console.log(validaDados.validaTelefone(telefone));
 
 // ^\(\d{2}\)\d{4}-\d{4}$/++
+// teste
