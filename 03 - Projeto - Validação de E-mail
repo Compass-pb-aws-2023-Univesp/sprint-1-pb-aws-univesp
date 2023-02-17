@@ -1,5 +1,0 @@
-Crie uma classe para validar e formatar endereços de e-mail através de um regex.
-Verificar se o endereço de e-mail é válido usando uma expressão regular.
-Verificar se o endereço de e-mail tem pelo menos um nome de usuário e um domínio.
-Verificar se o domínio tem pelo menos 2 caracteres e termina com ".com", ".org", ".net", ".br" ou ".edu".
-Se o endereço de e-mail for válido, o método de validação deve retornar o endereço de e-mail formatado em minúsculas. Caso contrário, deve retornar uma mensagem de erro.
