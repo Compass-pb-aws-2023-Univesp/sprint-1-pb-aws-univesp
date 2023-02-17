@@ -1,4 +1,4 @@
-class NomeValidador {
+class validaDados {
   static validaNome(nome) {
     if (/^[A-Z]+$/.test(nome)) {
       return 'O nome contém somente letras maiúsculas.';
@@ -10,9 +10,9 @@ class NomeValidador {
   }
 }
 
-console.log(NomeValidador.validaNome("JOÃO")); // O nome contém somente letras maiúsculas.
-console.log(NomeValidador.validaNome("maria")); // O nome contém somente letras minúsculas.
-console.log(NomeValidador.validaNome("Ana Paula")); // O nome contém caracteres que não são letras ou tem letras maiúsculas e minúsculas.
+console.log(validaDados.validaNome("JOÃO")); // O nome contém somente letras maiúsculas.
+console.log(validaDados.validaNome("maria")); // O nome contém somente letras minúsculas.
+console.log(validaDados.validaNome("Daniel")); // O nome contém caracteres que não são letras ou tem letras maiúsculas e minúsculas.
 
 
 //let nome = prompt("Digite o seu nome:");
