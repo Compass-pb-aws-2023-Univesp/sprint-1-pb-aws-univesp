@@ -1,19 +1,29 @@
 class validaDados {
+
   static validaNome(nome) {
-    if (/^[A-Z]+$/.test(nome)) {
-      return alert('O nome contém somente letras maiúsculas.');
-    } else if (/^[a-z]+$/.test(nome)) {
-      return 'O nome contém somente letras minúsculas.';
+    if (/^[a-zA-ZÀ-ú\sçÇ]+$/.test(nome)) {
+        console.log('Nome informado:\n\n'+ nome);
+        alert('Nome informado:\n\n'+ nome);
+        return 1;
+
     } else {
-      return 'O nome contém caracteres que não são letras ou tem letras maiúsculas e minúsculas.';
+        console.log('O nome informado não é válido! Tente novamente.');
+        alert('O nome informado não é válido! Tente novamente.');
+        return 0;
     }
+
+
   }
 }
 
 
+//let n = 0;
 
-let nome = prompt("Digite o seu nome:");
-console.log(validaDados.validaNome(nome));
+do {
+  nome = prompt("Digite o seu nome:");
+  n = validaDados.validaNome(nome);
+} while (n == 0);
+
 
 let email = prompt("Digite um endereço de email válido:");
 //console.log(validaDados.validaEmail(email));
