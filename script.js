@@ -17,8 +17,6 @@ class validaDados {
 }
 
 
-//let n = 0;
-
 do {
   nome = prompt("Digite o seu nome:");
   n = validaDados.validaNome(nome);
