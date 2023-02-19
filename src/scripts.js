@@ -161,3 +161,31 @@ if(NameValidator.validar(name)){
   //prevent default para a página não atualizar e perder os dados digitados nos inputs
   event.preventDefault()
 }
+
+// validação do Telefone 
+
+// Seleciona o elemento do formulário pelo ID
+const telefoneElement = document.getElementById("telefone");
+
+// Parte que Adiciona ao botão "Validar"
+document.querySelector("button").addEventListener("click", () => {
+  const telefone = new Telefone();
+  const numero = telefoneElement.value;
+  const resultado = telefone.validarTelefone(numero);
+  alert(resultado);
+});
+
+class Telefone {
+  validarTelefone(numero) {
+    // Valida se o número de telefone está no formato (NN)NNNN-NNNN
+    const regex = /\(\d{2}\)\d{4}-\d{4}/;
+    if (regex.test(numero)) {
+      return numero;
+    } else {
+      return "Número de telefone inválido. O formato correto é (xx)xxxx-xxxx.";
+      
+    }
+  }
+}
+
+
