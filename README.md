@@ -22,6 +22,8 @@ Criamos um repositório teste no Github chamado Sprint_1_teste, no qual começam
 Kelly : Minha principal dificuldade foi de sintentizar todo o contéudo com maior propriedade. 
 Tive um impasse por conta da configuração do git que saiu da pasta do diretório, mas com ajuda do Marcio viabilizou a resolução para continuar os testes e commit no repositório teste. 
 
+Luciene: Encontrei dificuldades em relação a construção da  estrutura do código, mas logo foi esclarecida pelos professores e colegas.
+
 O grupo apresentou algumas dificuldades ao utilizar o repositório remoto e também no desenvolvimento do código solicitado na atividade. As dificuldades foram tratadas em conjunto com o grupo e com ajuda dos instrutores, Scrum Master e demais colegas. 
 
 #### Como utilizar o sistema:
