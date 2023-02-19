@@ -11,4 +11,12 @@ class NomeValidator {
 
   const nome = prompt("Digite seu primeiro nome:");
 
+
+  try {
+    const nomeValido = NomeValidator.validate(nome);
+    console.log(`Nome válido: ${nomeValido}`);
+  } catch (error) {
+    console.log(error.message);
+  }
+
 console.log("teste");
