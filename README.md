@@ -2,10 +2,10 @@
 
 ***
 ## Equipe:
-Marcio Lima Brunelli
-Luciene Godoy da Silva
-Kelly Patricia Lopes Silva
-O'Dhara Sant'Anna Maggi
+- Marcio Lima Brunelli
+- Luciene Godoy da Silva
+- Kelly Patricia Lopes Silva
+- O'Dhara Sant'Anna Maggi
 
 ***
 ### Introdução:
@@ -15,12 +15,14 @@ Estudamos e aprendemos na prática com o projeto solicitado, aprofundando conhec
 ### Escopo:
 
 No primeiro momento separamos e criamos as atividades na ferramenta * [Trello](https://trello.com/invite/b/HYCfW3Wq/ATTI229826b5874d9ab830e5d4b60fff1c58E4F52549/sprint-1-compass-uol), sorteamos as tarefas para cada pessoa do grupo e deixamos acordado que iríamos ajudar um a outro no caso de alguém tivesse dificuldade no projeto. Nos reunimos durante alguns dias, trocamos informações e deixamos o grupo alinhado. 
-E sempre que tinhamos dificuldade conversavamos pelo whatsap. 
+E sempre que tinhamos dificuldade conversavamos pelo Whatsapp. 
 Criamos um repositório teste no Github chamado Sprint_1_teste, no qual começamos a praticar antes de enviar os arquivos finais do projeto.  
 
 #### Dificuldades conhecidas:
 Kelly : Minha principal dificuldade foi de sintentizar todo o contéudo com maior propriedade. 
 Tive um impasse por conta da configuração do git que saiu da pasta do diretório, mas com ajuda do Marcio viabilizou a resolução para continuar os testes e commit no repositório teste. 
+
+O grupo apresentou algumas dificuldades ao utilizar o repositório remoto e também no desenvolvimento do código solicitado na atividade. As dificuldades foram tratadas em conjunto com o grupo e com ajuda dos instrutores, Scrum Master e demais colegas. 
 
 #### Como utilizar o sistema:
 - Acesse o arquivo "index.html";

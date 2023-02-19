@@ -18,5 +18,3 @@ class NomeValidator {
   } catch (error) {
     console.log(error.message);
   }
-
-console.log("teste");
