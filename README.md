@@ -2,7 +2,7 @@
 
 ***
 ## Equipe:
-*[Marcio Lima Brunelli](https://github.com/ml-brunelli)
+*[Márcio Lima Brunelli](https://github.com/ml-brunelli)
 
 *[Luciene Godoy da Silva](https://github.com/LucieneGodoy)
 
@@ -18,19 +18,18 @@ Estudamos e aprendemos na prática com o projeto solicitado, aprofundando conhec
 ### Escopo:
 
 No primeiro momento separamos e criamos as atividades na ferramenta * [Trello](https://trello.com/invite/b/HYCfW3Wq/ATTI229826b5874d9ab830e5d4b60fff1c58E4F52549/sprint-1-compass-uol), sorteamos as tarefas para cada pessoa do grupo e deixamos acordado que iríamos ajudar um a outro no caso de alguém tivesse dificuldade no projeto. Nos reunimos durante alguns dias, trocamos informações e deixamos o grupo alinhado. 
-E sempre que tinhamos dificuldade conversavamos pelo Whatsapp e no discord.  
+E sempre que tinhamos dificuldade conversavamos pelo Whatsapp e no Discord.  
 Criamos um repositório teste no Github chamado Sprint_1_teste, no qual começamos a praticar antes de enviar os arquivos finais do projeto.  
 
 #### Dificuldades conhecidas:
-O grupo apresentou algumas dificuldades ao utilizar o repositório remoto e também no desenvolvimento do código solicitado na atividade. 
+O grupo apresentou algumas dificuldades ao utilizar o repositório remoto e também no desenvolvimento do código solicitado na atividade, principalmente com o regex.
 As dificuldades foram tratadas em conjunto com o grupo.  
 
-#### Como utilizar o sistema:
-- Crie uma pasta vazia e abrir com terminal GitBash;
-- No terminal iniciar o repositório e digitar git clone "Code" desse projeto;
-- Acesse o arquivo "index.html";
-- Insira os dados solicitados na caixa de diálogo;
-- Verifique se os dados são válidos utilizando a opção "inspecionar" disponível no navegador.
+#### User Stories:
+- User Story 1: Como usuário gostaria de validar dados de nome, email e telefone, para saber sobre sua autenticidade no meu cenário de uso.
+- Ação: Insiro um nome, email ou telefone em seu respectivo campo, e pressiono o botão validar a direita do campo
+
+![image](https://user-images.githubusercontent.com/35769020/220120131-b74f22cf-1004-436c-a601-705954c2d850.png)
 ### Ferramentas e tecnologia utilizadas:
 * [Trello](https://trello.com/invite/b/HYCfW3Wq/ATTI229826b5874d9ab830e5d4b60fff1c58E4F52549/sprint-1-compass-uol)
 
