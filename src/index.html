@@ -1,11 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Sprint 1</title>
-    <script src="script.js"></script>
+    <title>Validação - Sprint 1</title>
+    <link rel="icon" href="compass-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <h1> Atividade avaliativa - Grupo 2</h1>
+    <main>
+        <section>
+            <h2>Validação</h2>
+            <form>
+                <fieldset>
+                    <legend>Insira os dados para validação</legend>
+                    <p>
+                        <label for="nome">Nome:</label>
+                        <input  name="nome" id="nome" placeholder="Insira um nome" >
+                        <input  type="submit" id = "btnNome" value = "Validar">
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input  type = email name="email" id="email" placeholder="Insira um email">
+                        <input  type="submit" id = "btnEmail" value = "Validar">
+                    </p>
+                    <p>
+                        <label for="telefone">Telefone:</label>
+                        <input  name="telefone" id="telefone" placeholder="Insira um telefone">
+                        <input  type="submit" id = "btnTelefone" value = "Validar">
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+        <section>
+            <h2>Time</h2>
+            <address>
+                Kelly, Luciene, Márcio e Odhara 
+            </address>
+        </section>
+    
+    </main>
+    <hr>
+    <footer>
+        <p>Compass UOL - Programa de Formação em Machine Learning com AWS</p>
+    </footer>
 </body>
 </html>
