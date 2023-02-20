@@ -94,25 +94,28 @@ class NameValidator {
 const telefoneElement = document.getElementById("telefone");
 
 // Parte que Adiciona ao botão "Validar"
-document.querySelector("button").addEventListener("click", () => {
-  const telefone = new Telefone();
-  const numero = telefoneElement.value;
-  const resultado = telefone.validarTelefone(numero);
-  alert(resultado);
-});
+//document.querySelector("button").addEventListener("click", () => {
+  //const telefone = new Telefone();
+  //const numero = telefoneElement.value;
+  c//onst resultado = telefone.validarTelefone(numero);
+  //alert(resultado);
+//});
+
+function getTelefone(){
+  const telefone=document.getElementById("telefone").value
+  return telefone
+}
 
 class Telefone {
   validarTelefone(numero) {
     // Valida se o número de telefone está no formato (NN)NNNN-NNNN
     const regex = /\(\d{2}\)\d{4}-\d{4}/;
     if (regex.test(numero)) {
-      return numero;
-    } else {
-      return "Número de telefone inválido. O formato correto é (xx)xxxx-xxxx.";
+      return true;
+    } 
       
     }
   }
-}
 
 
 //essa função checa se isEmail & nameDomain são true
@@ -134,6 +137,7 @@ function validate(event){
   $result_domain.text("")
   $result_len.text("")
   $result_name.text("")
+  $result_numero.text("")
 
   //if isEmail == true & nameDomain == true
     //seta o texto e o estilo para o definido abaixo
