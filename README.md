@@ -2,10 +2,10 @@
 
 ***
 ## Equipe:
-- Marcio Lima Brunelli
-- Luciene Godoy da Silva
-- Kelly Patricia Lopes Silva
-- O'Dhara Sant'Anna Maggi
+*[Marcio Lima Brunelli](https://github.com/ml-brunelli)
+*[Luciene Godoy da Silva](https://github.com/LucieneGodoy)
+*[Kelly Patricia Lopes Silva](https://github.com/KellyPLSilva)
+*[O'Dhara Sant'Anna Maggi](https://github.com/odharamaggi)
 
 ***
 ### Introdução:
@@ -15,7 +15,7 @@ Estudamos e aprendemos na prática com o projeto solicitado, aprofundando conhec
 ### Escopo:
 
 No primeiro momento separamos e criamos as atividades na ferramenta * [Trello](https://trello.com/invite/b/HYCfW3Wq/ATTI229826b5874d9ab830e5d4b60fff1c58E4F52549/sprint-1-compass-uol), sorteamos as tarefas para cada pessoa do grupo e deixamos acordado que iríamos ajudar um a outro no caso de alguém tivesse dificuldade no projeto. Nos reunimos durante alguns dias, trocamos informações e deixamos o grupo alinhado. 
-E sempre que tinhamos dificuldade conversavamos pelo Whatsapp. 
+E sempre que tinhamos dificuldade conversavamos pelo Whatsapp e no discord.  
 Criamos um repositório teste no Github chamado Sprint_1_teste, no qual começamos a praticar antes de enviar os arquivos finais do projeto.  
 
 #### Dificuldades conhecidas:
