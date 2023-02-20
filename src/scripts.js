@@ -91,28 +91,28 @@ class NameValidator {
 // validação do Telefone 
 
 // Seleciona o elemento do formulário pelo ID
-const telefoneElement = document.getElementById("telefone");
+//const telefoneElement = document.getElementById("numero");
 
 // Parte que Adiciona ao botão "Validar"
 //document.querySelector("button").addEventListener("click", () => {
   //const telefone = new Telefone();
   //const numero = telefoneElement.value;
-  c//onst resultado = telefone.validarTelefone(numero);
+  //const resultado = telefone.validarTelefone(numero);
   //alert(resultado);
 //});
 
 function getTelefone(){
-  const telefone=document.getElementById("telefone").value
+  const telefone = document.getElementById("numero").value
   return telefone
 }
 
 class Telefone {
-  validarTelefone(numero) {
+  static validarTelefone(numero) {
     // Valida se o número de telefone está no formato (NN)NNNN-NNNN
     const regex = /\(\d{2}\)\d{4}-\d{4}/;
     if (regex.test(numero)) {
-      return true;
-    } 
+      return numero;
+     } 
       
     }
   }
@@ -190,7 +190,7 @@ if(NameValidator.validar(name)){
 }
 
 if(!Telefone.validarTelefone(numero)){
-  $result_numero.text("O numero foi digitado incorretamente: " + numero)
+  $result_numero.text("O numero foi digitado incorretamente: " + numero + " o formato correto é (xx)xxxx-xxxx")
   $result_numero.css("color", "red")
 }
 //o if abaixo tem um exclamação funcionando como negação, pra caso o nome esteja incorreto
