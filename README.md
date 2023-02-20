@@ -35,3 +35,8 @@ A validação do número de telefone é feita verificando se o número de telefo
 ***
 
 Os métodos são chamados através da página HTML que serve de interface para o usuário.
+
+## Dificuldades encontradas durante o projeto
+
+-Dificuldades para a criação de classes e metodos que foram utilizados para a execução do tema proposto.
+-Falta de alinhamento no inicio do projeto quanto a definição dos nomes das variaveis que seriam utilizadas e problemas posteriores no momento em que o programa era execultado
