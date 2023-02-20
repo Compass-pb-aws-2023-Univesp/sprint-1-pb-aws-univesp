@@ -21,14 +21,16 @@
          alert(`Endereço de e-mail inválido.`);
       }
     }
+    static telefone() {
+      let telefone = document.getElementById("telefone").value
+      const telefoneRegex = /^\(\d{2}\)\d{4}-\d{4}$/;
+      if (telefoneRegex.test(telefone)) {
+          return alert(`${telefone} é um telefone em formato válido`);
+        } else {
+            alert(`${telefone} está em um formato inválido. Use o formato (NN)NNNN-NNNN.`);
+      }
+    }
   }
-
-static telefone() {
-  let telefone = document.getElementById("telefone").value
-  const telefoneRegex = /^\(\d{2}\)\d{4}-\d{4}$/;
-  if (telefoneRegex.test(telefone)) {
-      return alert(`${telefone} é um telefone em formato válido`);
-    } else {
-        alert(`${telefone} está em um formato inválido. Use o formato (NN)NNNN-NNNN.`);
-  }
-}
+  document.getElementById("btnNome").addEventListener("click", Valida.nome);
+  document.getElementById("btnEmail").addEventListener("click", Valida.email);
+  document.getElementById("btnTelefone").addEventListener("click", Valida.telefone);
