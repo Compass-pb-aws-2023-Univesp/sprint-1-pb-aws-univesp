@@ -17,9 +17,11 @@ Estudamos e aprendemos na prática com o projeto solicitado, aprofundando conhec
 
 ### Escopo:
 
-No primeiro momento separamos e criamos as atividades na ferramenta * [Trello](https://trello.com/invite/b/HYCfW3Wq/ATTI229826b5874d9ab830e5d4b60fff1c58E4F52549/sprint-1-compass-uol), sorteamos as tarefas para cada pessoa do grupo e deixamos acordado que iríamos ajudar um a outro no caso de alguém tivesse dificuldade no projeto. Nos reunimos durante alguns dias, trocamos informações e deixamos o grupo alinhado. 
-E sempre que tinhamos dificuldade conversavamos pelo Whatsapp e no Discord.  
-Criamos um repositório teste no Github chamado Sprint_1_teste, no qual começamos a praticar antes de enviar os arquivos finais do projeto.  
+No primeiro momento separamos e criamos as atividades na ferramenta * [Trello](https://trello.com/invite/b/HYCfW3Wq/ATTI229826b5874d9ab830e5d4b60fff1c58E4F52549/sprint-1-compass-uol), sorteamos as tarefas para cada pessoa do grupo e deixamos acordado que iríamos ajudar um a outro no caso de alguém tivesse dificuldade no projeto. 
+
+![trello](https://user-images.githubusercontent.com/94749597/219962684-0a8b2e5a-16cb-4b7f-a745-1405829de47a.PNG)
+
+Nos reunimos durante alguns dias, trocamos informações deixando o grupo sempre alinhado e quando tínhamos dificuldade conversávamos pelo Whatsapp e Discord. Criamos um repositório teste no Github chamado Sprint_1_teste, no qual começamos a praticar antes de enviar os arquivos finais do projeto.  
 
 #### Dificuldades conhecidas:
 O grupo apresentou algumas dificuldades ao utilizar o repositório remoto e também no desenvolvimento do código solicitado na atividade, principalmente com o regex.
