@@ -21,7 +21,7 @@
          alert(`Endereço de e-mail inválido.`);
       }
     }
-  }
+  
 
 static telefone() {
   let telefone = document.getElementById("telefone").value
@@ -30,5 +30,6 @@ static telefone() {
       return alert(`${telefone} é um telefone em formato válido`);
     } else {
         alert(`${telefone} está em um formato inválido. Use o formato (NN)NNNN-NNNN.`);
+    }
   }
 }
