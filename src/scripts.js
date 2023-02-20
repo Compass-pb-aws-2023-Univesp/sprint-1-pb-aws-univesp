@@ -88,6 +88,32 @@ class NameValidator {
   }
 }
 
+// validação do Telefone 
+
+// Seleciona o elemento do formulário pelo ID
+const telefoneElement = document.getElementById("telefone");
+
+// Parte que Adiciona ao botão "Validar"
+document.querySelector("button").addEventListener("click", () => {
+  const telefone = new Telefone();
+  const numero = telefoneElement.value;
+  const resultado = telefone.validarTelefone(numero);
+  alert(resultado);
+});
+
+class Telefone {
+  validarTelefone(numero) {
+    // Valida se o número de telefone está no formato (NN)NNNN-NNNN
+    const regex = /\(\d{2}\)\d{4}-\d{4}/;
+    if (regex.test(numero)) {
+      return numero;
+    } else {
+      return "Número de telefone inválido. O formato correto é (xx)xxxx-xxxx.";
+      
+    }
+  }
+}
+
 
 //essa função checa se isEmail & nameDomain são true
   //caso sim, verifica como termina o endereço de email
@@ -99,8 +125,10 @@ function validate(event){
   let $result_domain = $("#result_domain")
   let $result_len = $("#result_len")
   let $result_name = $("#result_name")
+  let $result_numero = $("#result_numero")
   let email = $("#email").val()
   let name = $("#name").val()
+  let numero = $("#numero").val()
   email = email.toLowerCase()
   $resultado.text("")
   $result_domain.text("")
@@ -157,35 +185,19 @@ if(NameValidator.validar(name)){
     $result_name.css("color", "green")
 }
 
+if(!Telefone.validarTelefone(numero)){
+  $result_numero.text("O numero foi digitado incorretamente: " + numero)
+  $result_numero.css("color", "red")
+}
+//o if abaixo tem um exclamação funcionando como negação, pra caso o nome esteja incorreto
+if(Telefone.validarTelefone(numero)){
+  $result_numero.text("O numero foi digitado corretamente: " + numero)
+  $result_numero.css("color", "green")
+}
 
   //prevent default para a página não atualizar e perder os dados digitados nos inputs
   event.preventDefault()
 }
 
-// validação do Telefone 
-
-// Seleciona o elemento do formulário pelo ID
-const telefoneElement = document.getElementById("telefone");
-
-// Parte que Adiciona ao botão "Validar"
-document.querySelector("button").addEventListener("click", () => {
-  const telefone = new Telefone();
-  const numero = telefoneElement.value;
-  const resultado = telefone.validarTelefone(numero);
-  alert(resultado);
-});
-
-class Telefone {
-  validarTelefone(numero) {
-    // Valida se o número de telefone está no formato (NN)NNNN-NNNN
-    const regex = /\(\d{2}\)\d{4}-\d{4}/;
-    if (regex.test(numero)) {
-      return numero;
-    } else {
-      return "Número de telefone inválido. O formato correto é (xx)xxxx-xxxx.";
-      
-    }
-  }
-}
 
 
