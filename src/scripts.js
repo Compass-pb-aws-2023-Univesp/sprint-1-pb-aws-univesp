@@ -1,10 +1,22 @@
 //pega o elemento pelo id e fica "esperando" um clique para ativar a função validate
 document.getElementById("botao_submit").addEventListener("click", validate)
 
-//essa função serve para capturar o email digitado e exportar na var email
+//essa função serve para capturar o email digitado e retornar na var email
 function getEmail(){
   const email = document.getElementById("email").value
   return email
+}
+
+//Essa função serve para capturar o nome digitado e retornar na var nome
+function getNome(){
+  const nome = document.getElementById("nome").value
+  return nome
+}
+
+//Essa função serve para capturar o nome digitado e retornar na var telefone
+function getTelefone(){
+  const telefone = document.getElementById("numero").value
+  return telefone
 }
 
 //**1 - Verificar se o endereço de e-mail é válido usando uma expressão regular.**
@@ -70,12 +82,6 @@ class CheckDomain{
   }
 }
 
- //Essa função serve para capturar o nome digitado e exportar na var nome
- function getNome(){
-  const nome = document.getElementById("nome").value
-  return nome
-} 
-
 // Classe para fazer a verificação se o nome contém apenas letras maisculas e minusculas
 class NameValidator {
   static validar(nome) {
@@ -86,24 +92,6 @@ class NameValidator {
       return false;
     }
   }
-}
-
-// validação do Telefone 
-
-// Seleciona o elemento do formulário pelo ID
-//const telefoneElement = document.getElementById("numero");
-
-// Parte que Adiciona ao botão "Validar"
-//document.querySelector("button").addEventListener("click", () => {
-  //const telefone = new Telefone();
-  //const numero = telefoneElement.value;
-  //const resultado = telefone.validarTelefone(numero);
-  //alert(resultado);
-//});
-
-function getTelefone(){
-  const telefone = document.getElementById("numero").value
-  return telefone
 }
 
 class Telefone {
@@ -118,11 +106,8 @@ class Telefone {
   }
 
 
-//essa função checa se isEmail & nameDomain são true
-  //caso sim, verifica como termina o endereço de email
-    //se tudo certo, mostra o email digitado com a mensagem "email válido"
-      //se errado mostra uma mensagem de erro
-        //por fim, mostra uma mensagem informando o top-level domain do email digitado
+//essa é a função principal que valida o nome, email e telefone
+  //retorna o valor digitado quando correto ou uma mensagem de erro quando incorreto
 function validate(event){
   let $resultado = $("#resultado")
   let $result_domain = $("#result_domain")
@@ -139,8 +124,7 @@ function validate(event){
   $result_name.text("")
   $result_numero.text("")
 
-  //if isEmail == true & nameDomain == true
-    //seta o texto e o estilo para o definido abaixo
+  //if isEmail == true & nameDomain == true retorna o email com msg de sucesso
   if(CheckEmail.isEmail(email) & CheckNameDomain.nameDomain(email)){
     $resultado.text("O email " + email + " é válido :D")
     $resultado.css("color", "green")
@@ -171,35 +155,37 @@ function validate(event){
       $result_len.css("color", "green")
     }
   }
+  //se o email é inválido, retorna o email com uma mensagem de erro
   else{
     $resultado.text("O email " + email + " não é válido :/")
     $resultado.css("color", "red")
   }
 
- //prevent default para a página não atualizar e perder os dados digitados nos inputs
-  event.preventDefault()
-
+//VALIDAÇÃO DO NOME
+  //se o nome não é (!) valido retorna erro + nome digitado
 if(!NameValidator.validar(name)){
     $result_name.text("O nome foi digitado incorretamente: " + name)
     $result_name.css("color", "red")
 }
-//o if abaixo tem um exclamação funcionando como negação, pra caso o nome esteja incorreto
+//se o nome é valido retorna sucesso + o nome
 if(NameValidator.validar(name)){
     $result_name.text("O nome foi digitado corretamente: " + name)
     $result_name.css("color", "green")
 }
 
+//VALIDAÇÃO DO TELEFONE
+  //se o telefone não (!) é valido retorna erro + telefone digitado
 if(!Telefone.validarTelefone(numero)){
   $result_numero.text("O numero foi digitado incorretamente: " + numero + " o formato correto é (xx)xxxx-xxxx")
   $result_numero.css("color", "red")
 }
-//o if abaixo tem um exclamação funcionando como negação, pra caso o nome esteja incorreto
+  //se o telefone é valido retorna sucesso + o telefone
 if(Telefone.validarTelefone(numero)){
   $result_numero.text("O numero foi digitado corretamente: " + numero)
   $result_numero.css("color", "green")
 }
 
-  //prevent default para a página não atualizar e perder os dados digitados nos inputs
+//prevent default para a página não atualizar e perder os dados já digitados nos inputs
   event.preventDefault()
 }
 
