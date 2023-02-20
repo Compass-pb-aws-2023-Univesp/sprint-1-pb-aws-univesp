@@ -3,8 +3,11 @@
 ***
 ## Equipe:
 *[Marcio Lima Brunelli](https://github.com/ml-brunelli)
+
 *[Luciene Godoy da Silva](https://github.com/LucieneGodoy)
+
 *[Kelly Patricia Lopes Silva](https://github.com/KellyPLSilva)
+
 *[O'Dhara Sant'Anna Maggi](https://github.com/odharamaggi)
 
 ***
@@ -19,14 +22,12 @@ E sempre que tinhamos dificuldade conversavamos pelo Whatsapp e no discord.
 Criamos um repositório teste no Github chamado Sprint_1_teste, no qual começamos a praticar antes de enviar os arquivos finais do projeto.  
 
 #### Dificuldades conhecidas:
-Kelly : Minha principal dificuldade foi de sintentizar todo o contéudo com maior propriedade. 
-Tive um impasse por conta da configuração do git que saiu da pasta do diretório, mas com ajuda do Marcio viabilizou a resolução para continuar os testes e commit no repositório teste. 
-
-Luciene: Encontrei dificuldades em relação a construção da  estrutura do código, mas logo foi esclarecida pelos professores e colegas.
-
-O grupo apresentou algumas dificuldades ao utilizar o repositório remoto e também no desenvolvimento do código solicitado na atividade. As dificuldades foram tratadas em conjunto com o grupo e com ajuda dos instrutores, Scrum Master e demais colegas. 
+O grupo apresentou algumas dificuldades ao utilizar o repositório remoto e também no desenvolvimento do código solicitado na atividade. 
+As dificuldades foram tratadas em conjunto com o grupo.  
 
 #### Como utilizar o sistema:
+- Crie uma pasta vazia e abrir com terminal GitBash;
+- No terminal iniciar o repositório e digitar git clone "Code" desse projeto;
 - Acesse o arquivo "index.html";
 - Insira os dados solicitados na caixa de diálogo;
 - Verifique se os dados são válidos utilizando a opção "inspecionar" disponível no navegador.
